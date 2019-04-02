@@ -1,3 +1,12 @@
+Vue.component("barra-progreso", {
+  template: "#plantilla-barra-progreso",
+  props: ["porcentaje"]
+});
+
+Vue.component("mensaje-error", {
+  template: "#plantilla-mensaje-error"
+});
+
 const miapp = new Vue({
   el: "#contenedor",
   data: {
