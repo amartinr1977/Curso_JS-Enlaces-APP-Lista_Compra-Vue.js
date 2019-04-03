@@ -1,3 +1,16 @@
+Vue.component("comp-elementolista", {
+  props: ["producto"],
+  template: "#plantilla-com-elementolista",
+  methods: {
+    CambiarEstilo() {
+      this.$emit("clickcheck");
+    },
+    EliminarElemento() {
+      this.$emit("clickdelete");
+    }
+  }
+});
+
 Vue.component("barra-progreso", {
   template: "#plantilla-barra-progreso",
   props: ["porcentaje"]
